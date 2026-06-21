@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="刷卡精靈" />
+  <title>刷卡精靈 · 我的信用卡指南</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 主畫面：情境選擇 -->
+  <main id="view-home" class="view view-active">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <span class="brand-name">Card Genie</span>
+        </div>
+        <button class="icon-btn" id="btn-all" aria-label="全部卡片">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="hero-deco">
+        <span class="hero-deco-dots"></span>
+      </div>
+
+      <p class="hero-eyebrow">INFO · CARD · GENIE</p>
+      <h1 class="hero-title">CASH,<br/>CHOICE,<br/><span class="em"><span>CARD.</span></span></h1>
+      <p class="hero-sub">點選情境或平台，立即比較 12 張卡的最佳回饋與切換方案。</p>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-circle">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <path id="circle-path" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
+            </defs>
+            <text font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="2.4" fill="currentColor">
+              <textPath href="#circle-path">SCROLL DOWN · SCROLL DOWN · </textPath>
+            </text>
+          </svg>
+          <span class="hero-scroll-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <section class="scene-section">
+      <h3 class="scene-section-title">使用情境</h3>
+      <div class="scene-grid" id="scene-grid-mode"></div>
+    </section>
+    <section class="scene-section">
+      <h3 class="scene-section-title">常用平台</h3>
+      <div class="scene-grid" id="scene-grid-platform"></div>
+    </section>
+
+    <section class="quick-section">
+      <div class="section-head">
+        <h2>我的卡夾</h2>
+        <button class="link-btn" id="btn-all-2">查看全部 →</button>
+      </div>
+      <div class="card-rail" id="card-rail">
+        <!-- 由 JS 注入水平卡片 -->
+      </div>
+    </section>
+
+    <footer class="footnote">
+      <p>資料更新：2026 年 5 月</p>
+      <p>權益條款常變動，刷卡前請以發卡銀行公告為準</p>
+    </footer>
+  </main>
+
+  <!-- 情境結果頁 -->
+  <section id="view-scene" class="view">
+    <header class="page-head">
+      <button class="back-btn" data-back aria-label="返回">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="page-head-text">
+        <h2 id="scene-title">情境</h2>
+        <p id="scene-desc">說明</p>
+      </div>
+    </header>
+
+    <section class="rank-list" id="rank-list">
+      <!-- 由 JS 注入 -->
+    </section>
+  </section>
+
+  <!-- 全部卡片頁 -->
+  <section id="view-all" class="view">
+    <header class="page-head">
+      <button class="back-btn" data-back aria-label="返回">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="page-head-text">
+        <h2>全部卡片</h2>
+        <p>11 張卡，依銀行排序</p>
+      </div>
+    </header>
+
+    <section class="all-grid" id="all-grid">
+      <!-- 由 JS 注入 -->
+    </section>
+  </section>
+
+  <!-- 卡片詳情頁 -->
+  <section id="view-card" class="view">
+    <header class="page-head">
+      <button class="back-btn" data-back aria-label="返回">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="page-head-text">
+        <h2 id="card-title">卡片</h2>
+        <p id="card-bank">銀行</p>
+      </div>
+    </header>
+
+    <section class="card-detail" id="card-detail">
+      <!-- 由 JS 注入 -->
+    </section>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
