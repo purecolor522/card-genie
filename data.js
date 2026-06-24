@@ -28,6 +28,7 @@ window.CARDS = [
       shopee:    { rate: 3.0, basic: 0.3, cap: '無上限', plan: '玩數位', condition: '須切「玩數位」3%（VIP 3.3%）；蝦皮商城／購物網皆認列；⚠️ 綁 LINE Pay／街口不認列', effort: 3 },
       momo:      { rate: 3.0, basic: 0.3, cap: '無上限', plan: '玩數位', condition: '須切「玩數位」3%；momo 幣折抵不計回饋', effort: 3 },
       taobao:    { rate: 3.0, basic: 0.3, cap: '無上限', plan: '玩數位', condition: '切「玩數位」3%；外加 1.5% 海外手續費；不能同時吃「趣旅行」', effort: 3 },
+      cpc:       { rate: 2.0, basic: 0.3, cap: '無上限', plan: '集精選', condition: '須切「集精選」（不是樂饗購、玩遊購、玩數位！）；中油直營站；免登錄；綁 Apple/Google Pay 同享 2%；不含台塑石化', effort: 3 },
     }
   },
   {
@@ -55,6 +56,7 @@ window.CARDS = [
       shopee:    { rate: 4.5, basic: 1.0, cap: '加碼月上限 300 點', plan: 'UP 選網購', condition: '須切 UP 選網購；蝦皮商城／購物網皆認列；蝦皮專屬連結新戶有額外加碼', effort: 3 },
       momo:      { rate: 4.5, basic: 1.0, cap: '加碼月上限 300 點', plan: 'UP 選網購', condition: '須切 UP 選網購', effort: 3 },
       taobao:    { rate: 4.5, basic: 1.0, cap: '加碼月上限 300 點', plan: 'UP 選網購', condition: '海外網購計入 UP 選網購；外加 1.5% 海外手續費', effort: 3 },
+      cpc:       { rate: 7.5, basic: 1.0, cap: '加碼月上限 100 點（約刷 $3,333 封頂）', plan: 'UP 選/任意選 + CPC 滿額', condition: '⭐ 基本 1% + 百大加碼 3.5% + CPC 滿 $3,000 登錄 +3% = 7.5%；⚠️ 每月 23 日 12:00 開放登錄、限 30,000 名；中油直營站；不含台塑石化', effort: 4 },
     }
   },
   {
@@ -82,6 +84,7 @@ window.CARDS = [
       shopee:    { rate: 3.0, basic: 1.0, cap: '月上限 NT$150', plan: '指定網購', condition: '含蝦皮、momo；⚠️ 綁 LINE Pay 不認列電商加碼；新戶 10%（前 3 個月，上限 NT$300/月）', effort: 2 },
       momo:      { rate: 3.0, basic: 1.0, cap: '月上限 NT$150', plan: '指定網購', condition: '同蝦皮；含 momo 站內', effort: 2 },
       taobao:    { rate: 3.0, basic: 1.0, cap: '月上限 NT$150', plan: '指定網購', condition: '海外網購屬指定通路；外加 1.5% 海外手續費', effort: 2 },
+      cpc:       { rate: 6.0, basic: 1.0, cap: '加碼月上限 100 點（約刷 $3,333 封頂）', plan: '中油 Pay + 滿額加碼', condition: '⭐ 須綁中油 Pay 於中油直營站滿 $3,000＋登錄；1% 基本 + 2% 行支 + 3% 中油加碼 = 6%；⚠️ 每月 23 日 12:00 登錄、限 30,000 名；不含台塑石化', effort: 4 },
     }
   },
   {
@@ -109,6 +112,7 @@ window.CARDS = [
       shopee:    { rate: 3.0, basic: 1.0, cap: '加碼月上限 300 P 幣', plan: '指定電商', condition: '須登錄活動；蝦皮、momo、酷澎', effort: 2 },
       momo:      { rate: 3.0, basic: 1.0, cap: '加碼月上限 300 P 幣', plan: '指定電商', condition: '須登錄活動', effort: 2 },
       taobao:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無國外網購加碼；外加 1.5% 海外手續費', effort: 1 },
+      cpc:       { rate: 4.0, basic: 1.0, cap: '加碼月上限 100 P 幣', plan: '滿額加碼', condition: '須中油直營站滿 $3,000＋登錄；1% 基本 + 3% 中油加碼 = 4% P 幣；⚠️ 限人工島、自助加油不適用；不含台塑石化', effort: 4 },
     }
   },
   {
@@ -136,6 +140,7 @@ window.CARDS = [
       shopee:    { rate: 4.0, basic: 1.0, cap: '加碼月上限 NT$300', plan: '週末網購', condition: '限週六、日；⚠️ 直刷不可綁第三方支付', effort: 2 },
       momo:      { rate: 4.0, basic: 1.0, cap: '加碼月上限 NT$300', plan: '週末網購', condition: '限週六、日；⚠️ 直刷不可綁第三方支付', effort: 2 },
       taobao:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '指定電商不含淘寶；外加 1.5% 海外手續費', effort: 1 },
+      cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '加油不在 My 購指定通路加碼清單；僅基本 1%；不含台塑石化', effort: 1 },
     }
   },
   {
@@ -163,6 +168,7 @@ window.CARDS = [
       shopee:    { rate: 3.5, basic: 0.5, cap: '月上限 NT$300', plan: '行動支付', condition: '⚠️ 每月「1 號當天」登錄；綁悠遊付／Google Pay／LINE Pay 等', effort: 4 },
       momo:      { rate: 3.5, basic: 0.5, cap: '月上限 NT$300', plan: '行動支付', condition: '同蝦皮；須綁行動支付＋每月 1 號登錄', effort: 4 },
       taobao:    { rate: 1.0, basic: 0.5, cap: '無上限', plan: '基本', condition: '無淘寶專屬加碼；外加 1.5% 海外手續費', effort: 1 },
+      cpc:       { rate: 6.5, basic: 0.5, cap: '加碼月上限 NT$200', plan: '六大行動支付', condition: '⚠️ 每月 1 號 08:00–24:00 才能登錄；綁 LINE Pay／街口／Pi 拍／台灣 Pay 於中油人工島；新戶 6 個月內 6.5%、舊戶 3.5%；建議刷前確認當期條款是否排除加油 MCC', effort: 4 },
     }
   },
   {
@@ -190,6 +196,7 @@ window.CARDS = [
       shopee:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '⚠️ 蝦皮非統一通路；無加碼', effort: 1 },
       momo:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '⚠️ momo 非統一通路；Yahoo 購物才算集團', effort: 1 },
       taobao:    { rate: 2.0, basic: 2.0, cap: '無上限', plan: '基本（國外）', condition: '淘寶不在集團加碼；屬國外消費 2%；外加 1.5% 海外手續費', effort: 1 },
+      cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '⚠️ 中油非統一集團（速邁樂才是統一系：週四 5%、綁 iCash Pay 可達 10-17%）；中油直營只能拿基本 1% OPENPOINT', effort: 1 },
     }
   },
   {
@@ -217,6 +224,7 @@ window.CARDS = [
       shopee:    { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷', condition: '須切「數趣刷」；排除黃金、票券、遊戲點數', effort: 3 },
       momo:      { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷', condition: '須切「數趣刷」；節慶活動（女王節／母親節）可達 9.3%', effort: 3 },
       taobao:    { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷 / 玩旅刷', condition: '切「數趣刷」明列淘寶；也可切「玩旅刷」海外 3.3%；外加 1.5% 海外手續費', effort: 3 },
+      cpc:       { rate: 3.3, basic: 0.3, cap: '無上限（7 大方案合計每期 10,000 點）', plan: '天天刷', condition: '⚠️ 2026/1/1 起加油從「好饗刷」移到「天天刷」！須切「天天刷」；中油直營、全國加油、特急電、源點 EVOASIS、華城電能、USPACE、Autopass；⚠️ 只能用實體卡／台新 Pay／Apple Pay／Google Pay／Samsung Pay；不能用中油 Pay／LINE Pay／街口；不含台塑石化', effort: 3 },
     }
   },
   {
@@ -244,6 +252,7 @@ window.CARDS = [
       shopee:    { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷', condition: '同 Richart 卡機制', effort: 3 },
       momo:      { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷', condition: '同 Richart 卡機制；節慶可達 9.3%', effort: 3 },
       taobao:    { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷 / 玩旅刷', condition: '同 Richart 卡機制；外加 1.5% 海外手續費', effort: 3 },
+      cpc:       { rate: 3.3, basic: 0.3, cap: '無上限', plan: '好饗刷（舊卡保留）', condition: '舊太陽／玫瑰卡可切「好饗刷」拿 3.3%；新整併後規則同 Richart「天天刷」；⚠️ 不能用中油 Pay／LINE Pay／街口；不含台塑石化', effort: 3 },
     }
   },
   {
@@ -271,6 +280,7 @@ window.CARDS = [
       shopee:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '蝦皮屬境內非主打場景；無加碼', effort: 1 },
       momo:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無 momo 專屬加碼', effort: 1 },
       taobao:    { rate: 12.0, basic: 1.0, cap: '限量 100-200 名', plan: '跨境網購活動', condition: '⭐ 2026/5/20 起活動：單筆滿 NT$10,000 最高 12%；需登錄；限量；外加 1.5% 海外手續費', effort: 4 },
+      cpc:       { rate: 5.0, basic: 1.0, cap: '每月 1 張即享券（最高 NT$300）', plan: '指定通路即享券', condition: '2026/4 起：前月國內消費滿 $5,000 + 當月全台加油站滿額（滿 $2k 送 $100／$4k 送 $200／$6k 送 $300）；須登錄；需綁自扣或 e帳單才有完整 1% 基本（否則 0.5%）；LINE Pay 綁 J 卡刷中油可走 LINE Pay 3% 活動', effort: 4 },
     }
   },
   {
@@ -298,6 +308,7 @@ window.CARDS = [
       shopee:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無蝦皮加碼', effort: 1 },
       momo:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無 momo 加碼', effort: 1 },
       taobao:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無淘寶加碼（聯邦 LINE Bank 聯名卡才有）；外加 1.5% 海外手續費', effort: 1 },
+      cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '吉鶴卡主打日本；中油僅國內基本 1%；新戶核卡 3 個月內設定自扣可加 0.5% = 1.5%（上限 $300/月）；無加油專屬加碼', effort: 1 },
     }
   },
   {
@@ -325,6 +336,7 @@ window.CARDS = [
       shopee:   { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無蝦皮加碼', effort: 1 },
       momo:     { rate: 7.0, basic: 3.0, cap: '3% 每期上限 1,000 mo 幣（約刷 NT$10 萬封頂）；4% 品牌加碼依商品', plan: 'momo 站內', condition: '⭐ 自家／第三方賣家皆 3% mo 幣；精選品牌每件 +2~4% mo 點；Apple Pay／Google Pay 同享 3%；⚠️ 用 LINE Pay 結帳只有 1%（踢出 momo 加碼）', effort: 1 },
       taobao:   { rate: 0, basic: 0, cap: '完全無回饋', plan: '❌ 排除', condition: '⚠️ 淘寶屬「指定網路平台交易」明文排除於一般消費；不回饋', effort: 1 },
+      cpc:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: 'momo 卡主打 momo 站內；中油屬一般消費僅 1% 現金回饋（2026/4 起 momo 幣改現金）；加油未在排除清單；不含台塑石化', effort: 1 },
     }
   },
 ];
@@ -344,6 +356,7 @@ window.SCENARIOS = [
   { id: 'shopee',    label: '蝦皮',    emoji: '🛍', desc: '蝦皮購物網／商城', category: 'platform' },
   { id: 'momo',      label: 'momo',    emoji: '📦', desc: 'momo 站內結帳', category: 'platform' },
   { id: 'taobao',    label: '淘寶',    emoji: '🐼', desc: '淘寶／天貓跨境', category: 'platform' },
+  { id: 'cpc',       label: '中油加油', emoji: '⛽', desc: '中油直營（不含台塑）', category: 'platform' },
 ];
 
 window.EFFORT_LABEL = {
