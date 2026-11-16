@@ -1,4 +1,4 @@
-const CACHE = 'card-genie-v8';
+const CACHE = 'card-genie-v9';
 const ASSETS = [
   './',
   './index.html',

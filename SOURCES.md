@@ -55,6 +55,14 @@
 | ubot-delivery | 聯邦外送活動（115/7/1–12/31） | [連結](https://activity.ubot.com.tw/aws_act/2026/202607delivery/index.htm) | 無 | 聯邦 外送 登錄 |
 | ubot-ecday | 聯邦網購天天聯邦日（115/7/1–12/31） | [連結](https://activity.ubot.com.tw/aws_act/2026/20260701ecubday/index.htm) | 無 | 網購天天聯邦日 |
 | ubot-pxmart | 聯邦全聯 Q4 週末滿額贈（至 2026/12/3） | [連結](https://activity.ubot.com.tw/aws_act/2026/202611pxmart/index.htm) | 無 | 聯邦 全聯 週末 滿額贈 |
+| thsr-tex-app | 高鐵 T Express App 購票說明（付款方式、超商繳費單） | [連結](https://www.thsrc.com.tw/ArticleContent/4d262503-84bc-4963-a58e-4ca1a6453ad3) | [2026-09-11](https://web.archive.org/web/20260911/https://www.thsrc.com.tw/ArticleContent/4d262503-84bc-4963-a58e-4ca1a6453ad3) | T-EX 行動購票 App 購票說明 |
+| thsr-online-booking | 高鐵網路訂票付款方式（台灣 Pay 暫停） | [連結](https://www.thsrc.com.tw/ArticleContent/dea241a9-fe69-4e9d-b9a5-6caed6e486d6) | [2026-10-16](https://web.archive.org/web/20261016/https://www.thsrc.com.tw/ArticleContent/dea241a9-fe69-4e9d-b9a5-6caed6e486d6) | 台灣高鐵 網路訂票 付款方式 |
+| thsr-station-counter | 高鐵車站窗口購票付款方式 | [連結](https://www.thsrc.com.tw/ArticleContent/43d5e5e2-3777-46b9-bc8f-8b5b579b50ed) | [2026-10-25](https://web.archive.org/web/20261025/https://www.thsrc.com.tw/ArticleContent/43d5e5e2-3777-46b9-bc8f-8b5b579b50ed) | 台灣高鐵 車站窗口購票 |
+| thsr-tvm | 高鐵自動售票機付款方式 | [連結](https://www.thsrc.com.tw/ArticleContent/6be4173c-91dc-4d06-ae3e-a19de420a237) | [2026-11-11](https://web.archive.org/web/20261111/https://www.thsrc.com.tw/ArticleContent/6be4173c-91dc-4d06-ae3e-a19de420a237) | 台灣高鐵 自動售票機購票 |
+| thsr-cvs | 高鐵便利商店訂位、付款、取票 | [連結](https://www.thsrc.com.tw/ArticleContent/baba745a-d802-440c-b762-3eef37b96b60) | [2026-09-16](https://web.archive.org/web/20260916/https://www.thsrc.com.tw/ArticleContent/baba745a-d802-440c-b762-3eef37b96b60) | 台灣高鐵 便利商店 付款 取票 |
+| chb-myle | 彰銀 My 樂卡片頁（6 大 Pay 活動 115/7/1–12/31） | [連結](https://mylove.bankchb.com/) | [2025-10-14](https://web.archive.org/web/20251014/https://mylove.bankchb.com/)（舊版） | 彰銀 My樂現金回饋卡 行動支付刷My樂 |
+| ctbc-nofeedback | 中信不回饋交易項目（2026 年版） | [連結](https://www.ctbcbank.com/twrbo/zh_tw/cc_index/cc_feedback/cc_nofeedback.html) | 無 | 中國信託 不回饋交易項目 |
+| fubon-jcard-ipass | 富邦 J 卡一卡通大眾運輸 2%（高鐵除外） | [連結](https://cardpromote.taipeifubon.com.tw/promotion/Detail?sn=C000146) | [2026-06-10](https://web.archive.org/web/20260610/https://cardpromote.taipeifubon.com.tw/promotion/Detail?sn=C000146)（舊版） | J卡 一卡通 大眾運輸 2% 回饋 |
 
 ## 各卡變更與依據
 
@@ -102,7 +110,7 @@
 - 🟠 年費「首年免」：依 hankexploring 2026/10/03（沒有網址）。
 
 ### 彰銀 My 樂卡
-這張卡最缺具體網址，查證員只給了 `mylove.bankchb.com` 網域，沒有具體頁面。以下全部標 🟠。
+下面幾條在 11/16 查證時只找到 `mylove.bankchb.com` 網域，沒有具體頁面，全部標 🟠。後來補查高鐵時確認網域首頁就是官方卡片頁〔chb-myle〕：6 大 Pay 登錄 +3%、每月 1 日 08:00–24:00 登錄、每歸戶每月加碼上限 NT$200，跟下面的數字一致；其他各條還沒逐條重新核對。
 - 🟠 **LINE Pay、外送、中油 6.5→3.5**：原本的 6.5% 是新戶回饋，改成舊戶的 3.5%。新戶（未曾持有 My 樂正卡）核卡 3 個月內為 9.5%。
 - 🟠 **國內網購 0.5→3.5**：網購結帳用 6 大 Pay 可拿 3.5%。
 - 🟠 **義大利 1→0**：歐盟實體交易不列入基本與加碼回饋。
@@ -151,6 +159,24 @@
 ### 共用
 - 🟡 家樂福自 2026/7/1 起，量販更名萬家福、超市更名樂家康，app 裡的情境名稱已跟著改（`id` 仍是 `carrefour`）。〔tvbs-carrefour〕〔bw-carrefour〕
 
+### 新增情境：高鐵（thsr）
+2026-11-16 新增。先記高鐵購票這一端的事實，各卡的回饋都以此為前提。
+- ✅ 付款方式：T Express App 收 Visa、Mastercard、JCB、AE（限台灣發行）及 Apple Pay、Google Pay；官網訂票只收信用卡（Visa、Mastercard、JCB、銀聯），不收手機錢包，台灣 Pay（金融卡）2025/6/27 起暫停；車站窗口、自動售票機收信用卡及 Apple／Google／Samsung Pay。三個頁面都沒列 LINE Pay、街口、悠遊付、全支付、Pi 拍錢包、icash Pay，所以視為不收（這點是從「沒列」推論）。〔thsr-tex-app〕〔thsr-online-booking〕〔thsr-station-counter〕〔thsr-tvm〕
+- 🟡 超商：在超商機台訂位要付現金；網路或 T Express 訂位後到超商付款，收款的是超商，各銀行多半把便利商店消費排除，所以各卡的超商付款取票都寫 0%（uniopen 寫「不明」）。〔thsr-cvs〕
+- 🟠 高鐵官網目前只有「信用卡商務車廂升等」，沒有刷卡回饋或折扣活動；台新、彰銀公告這個升等專案 2027/1/1 起停辦。升等不是回饋，沒有寫進資料。
+- 各卡 `rate`：
+  - ✅ 玉山 Unicard 4.5：高鐵列在百大「加油交通」，限官網、App、窗口、售票機，排除高鐵假期、旅行社、超商付款、聯票、感應進站。〔esun-unicard〕
+  - ✅ 彰銀 My 樂 3.5：6 大 Pay 登錄 +3%，6 款中高鐵只收 Google Pay（限 Android 手機）；Google Pay 限代碼化卡片交易。〔chb-myle〕
+  - ✅ 台新 Richart、太陽／玫瑰 3.3：「天天刷」的通勤交通明列高鐵，限官網、T Express、窗口、售票機，依消費日的方案計算。〔taishin-7plus1〕
+  - ✅ 玉山 U Bear 3：網路消費清單明列「高鐵線上購票」「台灣高鐵 T-EX 行動購票」；窗口、售票機算實體交易，只有 1%。〔esun-ubear〕
+  - ✅ 國泰 CUBE 3：台灣高鐵列在「趣旅行」的指定國內外交通。認列官網、App、臨櫃、售票機，不含補票、車上推車，這段寫在彈出說明裡，本機快照沒存到。〔cathay-cube-list〕
+  - 🟡 玉山 Pi 3：沒有高鐵加碼，走滿額加碼，跟其他一般消費情境同樣算法。〔esun-pi〕
+  - 🟡 聯邦吉鶴 3：沒有高鐵加碼，走 5 週年滿額加碼 +2%；不回饋項目沒有交通。〔ubot-jiho-5y〕〔ubot-excl〕
+  - 🟠 彰銀 My 購 2：網購依付款管道判定，官網沒點名高鐵；高鐵線上刷卡符合定義，跟外送、萬家福線上的算法一致。〔chb-mygo〕
+  - 🟡 中信 uniopen 1：高鐵不是統一集團通路，只有國內一般消費 1%；不回饋項目沒有交通，但有便利商店消費和儲值。〔ctbc-uniopen〕〔ctbc-nofeedback〕
+  - 🟡 富邦 J 卡、momo 卡 1：只有一般消費 1%；兩張卡的一卡通大眾運輸 2% 都明文「高鐵除外」。〔fubon-jcard〕〔fubon-momo〕〔fubon-jcard-ipass〕
+  - 🟠 momo 卡上半年的高鐵／臺鐵加碼 7% 已在 2026/6/30 結束，只有第三方整理，官網已查不到。
+
 ## 下次更新
 
 - **時間**：多數權益到 2026/12/31，U Bear、Pi 卡到 2027/2/28。各家公告 2027 年權益後要再查一次。
@@ -164,6 +190,7 @@
 - **已知的 2027 年變動**（這次沒有套用）：
   - CUBE「固定回饋」若沒續辦，2027/1/1 自動切成樂饗購；台塑家、全支付自動切成集精選。
   - 聯邦一般消費定義自 2027/1/1 起排除 TikTok 交易。
+  - 台灣高鐵 2027/1/1 起停辦指定信用卡商務車廂升等（台新、彰銀公告），不影響回饋資料。
 - **步驟**：
   1. 先檢查本檔每個網址是否還有效，失效的照上面「網址失效時怎麼辦」處理。
   2. 對照官方頁面更新 `data.js`，計算規則見 `data.js` 開頭的註解。每張卡的 `validUntil` 改成新權益中最早到期的日期。

@@ -8,7 +8,7 @@ window.DATA_META = { verifiedAt: '2026-11-16' };
 
 // scenarios（id 需與下方 window.SCENARIOS 一致）：
 //   使用情境：abroad(出國) / italy(義大利／歐盟) / linepay / delivery(外送) / domestic(國內網購) / overseas(國外網購)
-//   常用平台：starbucks / pxmart(全聯) / carrefour / shopee / momo / taobao / cpc(中油)
+//   常用平台：starbucks / pxmart(全聯) / carrefour / shopee / momo / taobao / cpc(中油) / thsr(高鐵)
 // rate 為「最高可達回饋」，basic 為「無條件基本回饋」
 // effort: 1=免動作, 2=需登錄/綁定, 3=需切換權益, 4=需多重任務
 window.CARDS = [
@@ -39,6 +39,7 @@ window.CARDS = [
       momo:      { rate: 3.0, basic: 0.3, cap: '無上限', plan: '玩數位', condition: '須切「玩數位」3%；momo 幣折抵不計回饋', effort: 3 },
       taobao:    { rate: 3.0, basic: 0.3, cap: '無上限', plan: '玩數位', condition: '切「玩數位」3%；外加 1.5% 海外手續費；不能同時吃「趣旅行」', effort: 3 },
       cpc:       { rate: 2.0, basic: 0.3, cap: '無上限', plan: '集精選', condition: '須切「集精選」（不是樂饗購、玩遊購、玩數位！）；中油直營站；免登錄；綁 Apple/Google Pay 同享 2%；不含台塑石化', effort: 3 },
+      thsr:      { rate: 3.0, basic: 0.3, cap: '無上限', plan: '趣旅行', condition: '須切「趣旅行」（Level 2 為 3%、Level 1 為 2%、VIP 3.3%）；官網明列台灣高鐵，高鐵官網、T Express、車站窗口、自動售票機皆認列，不含補票、車上推車；依刷卡授權日的方案計算，訂位後才付款要在付款當天切換；⚠️ 超商付款取票 0%；已選「固定回饋」者為 1.2%', effort: 3 },
     }
   },
   {
@@ -68,6 +69,7 @@ window.CARDS = [
       momo:      { rate: 4.5, basic: 1.0, cap: '加碼月上限 5,000 點（UP 選）', plan: 'UP 選', condition: 'momo 購物網（含 App、電視購物）屬百大「電商平台」；UP 選 4.5%／任意選 3.5%／簡單選 3%', effort: 3 },
       taobao:    { rate: 4.5, basic: 1.0, cap: '加碼月上限 5,000 點（UP 選）', plan: 'UP 選', condition: '淘寶網（含手機淘寶、淘寶 Lite）屬百大「電商平台」；UP 選 4.5%；外加 1.5% 海外手續費', effort: 3 },
       cpc:       { rate: 7.5, basic: 1.0, cap: '中油加碼月上限 100 點（約刷 $3,333 封頂）', plan: 'UP 選 + 中油滿額登錄', condition: '⭐ 基本 1% + 百大「加油交通」UP 選 3.5% + 中油直營站當月滿 $3,000 登錄 3% = 7.5%；⚠️ 每月 23 日 12:00 起至月底開放登錄、每月限 20,000 名；實體卡／Apple Pay／中油 Pay 皆可，LINE Pay 等第三方支付不適用登錄活動；不含台塑石化（活動至 2026/12/31）', effort: 4 },
+      thsr:      { rate: 4.5, basic: 1.0, cap: '加碼月上限 5,000 點（UP 選）', plan: 'UP 選', condition: '高鐵屬百大「加油交通」：UP 選 4.5%／任意選需把「高鐵」選入 8 家 3.5%／簡單選 3%；⭐ 官網、T Express、車站窗口（含定期票）、自動售票機皆認列，實體卡或 Apple／Google／Samsung Pay 都可；⚠️ 超商付款取票、高鐵假期、旅行社代購、聯票、車上餐飲不算百大；悠遊卡／一卡通感應進站與自動加值 0%', effort: 3 },
     }
   },
   {
@@ -97,6 +99,7 @@ window.CARDS = [
       momo:      { rate: 3.0, basic: 1.0, cap: '加碼每期上限 NT$150（網路消費合計）', plan: '網路消費', condition: '同蝦皮；含 momo 站內', effort: 2 },
       taobao:    { rate: 3.0, basic: 1.0, cap: '加碼每期上限 NT$150（網路消費合計）', plan: '網路消費', condition: '淘寶明列網路消費；外加 1.5% 海外手續費', effort: 2 },
       cpc:       { rate: 6.0, basic: 1.0, cap: '中油加碼月上限 100 點（約刷 $3,333 封頂）', plan: '中油 Pay + 滿額登錄', condition: '⭐ 須綁中油 Pay 於中油直營站加油：基本 1% + 網路消費 2%（中油 Pay 屬行動支付）+ 當月滿 $3,000 登錄 3% e point = 6%；⚠️ 每月 23 日 12:00 起至月底登錄、每月限 20,000 名；直接刷實體卡僅 1%＋3%；不含台塑石化（活動至 2026/12/31）', effort: 4 },
+      thsr:      { rate: 3.0, basic: 1.0, cap: '加碼每期上限 NT$150（網路消費合計）', plan: '網路消費（線上購票）', condition: '官網明列「高鐵線上購票」「台灣高鐵 T-EX 行動購票」為網路消費：基本 1% + 加碼 2%（需 e帳單）；在 T Express 或官網直接輸入卡號付款最穩；⚠️ 車站窗口、售票機刷卡或手機感應算實體交易，只有 1%；超商付款取票 0%', effort: 2 },
     }
   },
   {
@@ -126,6 +129,7 @@ window.CARDS = [
       momo:      { rate: 3.0, basic: 1.0, cap: '加碼每月每歸戶 3,000 P 幣', plan: '滿額加碼', condition: '原「指定電商」加碼已結束；登錄＋當月一般消費滿 3 萬達 3%（滿 1 萬 1.8%）', effort: 4 },
       taobao:    { rate: 3.0, basic: 1.0, cap: '加碼每月每歸戶 3,000 P 幣', plan: '滿額加碼', condition: '無淘寶專屬加碼；登錄＋當月一般消費滿 3 萬可達 3%（滿 1 萬 1.8%）；外加 1.5% 海外手續費', effort: 4 },
       cpc:       { rate: 6.0, basic: 1.0, cap: '中油加碼月上限 100 點 e point（約刷 $3,333）', plan: '中油滿額登錄 + 滿額加碼', condition: '中油直營站當月滿 $3,000＋登錄享 3% 玉山 e point（全玉山信用卡適用；實體卡／Apple Pay／中油 Pay 皆可，⚠️ 用 Pi 拍錢包付款不適用）＋基本 1% P 幣＝4%；當月一般消費再滿 3 萬 +2% = 6%；⚠️ 每月 23 日 12:00 起登錄、每月限 20,000 名；不含台塑石化（活動至 2026/12/31）', effort: 4 },
+      thsr:      { rate: 3.0, basic: 1.0, cap: '加碼每月每歸戶 3,000 P 幣', plan: '滿額加碼', condition: '高鐵無專屬加碼，官網、T Express、窗口、售票機刷卡皆屬一般消費 1%；登錄＋當月一般消費滿 3 萬可達 3%（滿 1 萬 1.8%）；⚠️ 高鐵不收 Pi 拍錢包，拿不到 Pi 通路 5%；超商付款取票 0%', effort: 4 },
     }
   },
   {
@@ -155,6 +159,7 @@ window.CARDS = [
       momo:      { rate: 4.0, basic: 1.0, cap: '加碼月上限 NT$300', plan: '週末網購', condition: '限週六、日（平日 2%）；mo店+ 不適用；⚠️ 直刷不可綁第三方支付（活動至 2026/12/31）', effort: 1 },
       taobao:    { rate: 2.0, basic: 1.0, cap: '加碼合併每月上限 NT$300', plan: '網購加碼', condition: '淘寶不在指定海外電商名單，僅網購 +1%＝2%；⚠️ 若經支付寶等第三方支付綁卡可能不認列；外加 1.5% 海外手續費', effort: 1 },
       cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '加油不在 My 購指定通路加碼清單；僅基本 1%；不含台塑石化', effort: 1 },
+      thsr:      { rate: 2.0, basic: 1.0, cap: '加碼合併每月上限 NT$300', plan: '網購加碼', condition: '高鐵不在指定通路；在高鐵官網或 T Express 線上刷卡算網購 +1%＝2%（⚠️ 官網未點名高鐵，以彰銀系統判定為準）；車站窗口、售票機刷卡（含手機感應）僅 1%；超商付款取票 0%（活動至 2026/12/31）', effort: 1 },
     }
   },
   {
@@ -184,6 +189,7 @@ window.CARDS = [
       momo:      { rate: 3.5, basic: 0.5, cap: '加碼每月每歸戶 NT$200', plan: '6 大 Pay 登錄', condition: '同蝦皮；須綁行動支付＋每月 1 號登錄（活動至 2026/12/31）', effort: 4 },
       taobao:    { rate: 3.0, basic: 0.5, cap: '國外加碼無上限', plan: '國外通路加碼', condition: '淘寶交易國別非臺灣可認列國外消費（依商家拋送資訊為準）：1%＋數存 +0.5%＋e帳單/自扣 +1.5%＝3%；無淘寶專屬加碼；外加 1.5% 海外手續費', effort: 4 },
       cpc:       { rate: 3.5, basic: 0.5, cap: '加碼月上限 NT$200', plan: '六大行動支付', condition: '⚠️ 每月 1 號 08:00–24:00 才能登錄；綁 LINE Pay／街口／Pi 拍／台灣 Pay 於中油人工島；舊戶 3.5%、新卡核卡後 3 個月 9.5%；當期條款未排除加油（活動至 2026/12/31）', effort: 4 },
+      thsr:      { rate: 3.5, basic: 0.5, cap: '加碼每月每歸戶 NT$200', plan: '6 大 Pay 登錄（Google Pay）', condition: '⚠️ 每月「1 號當天 08:00–24:00」登錄；6 大 Pay 中高鐵只收 Google Pay（限 Android 手機；車站窗口、售票機感應最穩，T Express 內也可用）；⚠️ LINE Pay、街口、Pi、悠遊付高鐵不收，iPhone 的 Apple Pay 不在 6 大 Pay；直接刷卡僅 0.5%；超商付款取票 0%（活動至 2026/12/31）', effort: 4 },
     }
   },
   {
@@ -213,6 +219,7 @@ window.CARDS = [
       momo:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '⚠️ momo 非統一通路；Yahoo 購物才算集團', effort: 1 },
       taobao:    { rate: 2.0, basic: 2.0, cap: '無上限', plan: '基本（國外）', condition: '淘寶不在集團加碼；屬國外消費 2%；外加 1.5% 海外手續費', effort: 1 },
       cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '⚠️ 中油非統一集團（統一精工速邁樂才是：週二／四／六人工島加 25 公升以上每公升 1.9 點）；中油直營只能拿基本 1% OPENPOINT', effort: 1 },
+      thsr:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '高鐵不是統一集團通路，只有國內一般消費 1% OPENPOINT；官網、T Express、車站窗口、售票機都一樣；⚠️ 高鐵不收 icash Pay，拿不到 icash Pay 加碼；超商付款取票回饋不明；悠遊卡／一卡通自動加值不回饋', effort: 1 },
     }
   },
   {
@@ -242,6 +249,7 @@ window.CARDS = [
       momo:      { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷', condition: '須切「數趣刷」；⚠️ momo 不適用 Chill刷', effort: 3 },
       taobao:    { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷 / 玩旅刷', condition: '切「數趣刷」明列淘寶；也可切「玩旅刷」海外 3.3%；外加 1.5% 海外手續費', effort: 3 },
       cpc:       { rate: 3.3, basic: 0.3, cap: '無上限（每期加碼消費以永久額度＋NT$30 萬為限）', plan: '天天刷', condition: '⚠️ 2026/1/1 起加油從「好饗刷」移到「天天刷」！須切「天天刷」；中油直營、全國加油、特急電、源點 EVOASIS、華城電能、USPACE、Autopass；⚠️ 只能用實體卡／台新 Pay／Apple Pay／Google Pay／Samsung Pay；不能用中油 Pay／LINE Pay／街口；不含台塑石化', effort: 3 },
+      thsr:      { rate: 3.3, basic: 0.3, cap: '無上限（每期加碼消費以永久額度＋NT$30 萬為限）', plan: '天天刷', condition: '須切「天天刷」（通勤交通明列高鐵；LEVEL 2 台新帳戶自扣 3.3%，未設定 1.3%）；限高鐵官網、T Express、車站窗口、自動售票機購票，實體卡（含線上輸入卡號）／Apple Pay／Google 錢包／Samsung Pay 皆可；依「消費日」的方案計算，不是乘車日；⚠️ 當天切到其他方案只剩 0.3%；超商付款取票 0%；悠遊卡／一卡通感應搭自由座不加碼', effort: 3 },
     }
   },
   {
@@ -271,6 +279,7 @@ window.CARDS = [
       momo:      { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷', condition: '同 Richart 卡機制', effort: 3 },
       taobao:    { rate: 3.3, basic: 0.3, cap: '無上限', plan: '數趣刷 / 玩旅刷', condition: '同 Richart 卡機制；外加 1.5% 海外手續費', effort: 3 },
       cpc:       { rate: 3.3, basic: 0.3, cap: '無上限（每期加碼消費以永久額度＋NT$30 萬為限）', plan: '天天刷', condition: '⚠️ 原太陽／玫瑰卡同 Richart：2026/1/1 起加油移到「天天刷」，「好饗刷」已不含加油；⚠️ 不能用中油 Pay／LINE Pay／街口；不含台塑石化', effort: 3 },
+      thsr:      { rate: 3.3, basic: 0.3, cap: '無上限（每期加碼消費以永久額度＋NT$30 萬為限）', plan: '天天刷', condition: '同 Richart 機制（7+1 方案）：切「天天刷」3.3%（LEVEL 2），限高鐵官網、T Express、車站窗口、自動售票機購票，依消費日的方案計算；⚠️ 當天切到其他方案只剩 0.3%；超商付款取票 0%；悠遊卡感應搭自由座不加碼', effort: 3 },
     }
   },
   {
@@ -300,6 +309,7 @@ window.CARDS = [
       momo:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無 momo 專屬加碼', effort: 1 },
       taobao:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本（國外）', condition: '⚠️ 2026/5/20 起的淘寶 12% 限量活動已結束，第四季無淘寶加碼；僅一般消費 1%；外加 1.5% 海外手續費', effort: 1 },
       cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '精選通路加油即享券（2026/4–9 月）已結束，第四季未續辦；中油屬國內一般消費 1%，需綁自扣或 e帳單（否則 0.5%）', effort: 1 },
+      thsr:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '高鐵購票算國內一般消費 1%（需 e帳單或富邦帳戶自扣，否則 0.5%）；官網、T Express、窗口、售票機都一樣，無高鐵加碼；⚠️ J 卡一卡通搭大眾運輸 2% 明文「高鐵除外」；超商付款取票 0%', effort: 1 },
     }
   },
   {
@@ -329,6 +339,7 @@ window.CARDS = [
       momo:      { rate: 7.0, basic: 3.0, cap: '3% 每期上限 2,000 mo 幣（2026/10～2027/1 帳單，約刷 NT$6.7 萬封頂）；品牌加碼每筆上限 9,999 mo 點', plan: 'momo 站內', condition: '⭐ 免登錄：全站 3% mo 幣（自家／第三方賣家皆適用）＋精選品牌 +2~4% mo 點 = 最高 7%（品牌加碼至 2026/12/31）；Apple Pay／Google Pay 同享；⚠️ 用 LINE Pay 結帳只有 1%；11 月另有站內單筆分期滿 2 萬＋Fubon+ 登錄（11/24 15:00 起、限 1,700 名）送 1,600 刷卡金（8%），但分期不給 3% mo 幣與品牌加碼（活動至 2026/11/30）', effort: 1 },
       taobao:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本（海外）', condition: '現行「指定網路平台」排除清單僅 YouTube、Spotify、TikTok、Apple、Google，已不含淘寶；淘寶算海外消費 1% 現金回饋；外加 1.5% 海外手續費', effort: 1 },
       cpc:       { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: 'momo 卡主打 momo 站內；中油屬一般消費僅 1% 現金回饋（2026/4 起 momo 幣改現金）；加油未在排除清單；不含台塑石化', effort: 1 },
+      thsr:      { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '高鐵購票算店外一般消費 1%（官網、T Express、窗口、售票機皆同）；上半年高鐵／臺鐵加碼 7% 已於 6/30 結束；⚠️ 一卡通功能搭大眾運輸 2% 明文「高鐵除外」；超商付款取票 0%', effort: 1 },
     }
   },
   {
@@ -358,6 +369,7 @@ window.CARDS = [
       momo:      { rate: 3.0, basic: 1.0, cap: '滿額加碼月上限 NT$600', plan: '卡友滿額加碼', condition: '當月國內消費滿 2 萬＋每月 15 日起登錄 +2%（5 週年活動，至 2027/3/31）；另有每月限量搶登「網購天天聯邦日」momo 單筆滿 3,000 送 250（限 1,000 名，未計入）（活動至 2026/12/31）', effort: 4 },
       taobao:    { rate: 1.0, basic: 1.0, cap: '無上限', plan: '基本', condition: '無淘寶卡片加碼（LINE Bank 聯名卡才有）；台幣請款才可能計入 5 週年卡友滿額 +2%；另有每月限量搶登「網購天天聯邦日」淘寶／天貓滿 1,200 送 100（限 1,000 名，未計入）；外加 1.5% 海外手續費', effort: 1 },
       cpc:       { rate: 3.0, basic: 1.0, cap: '滿額加碼月上限 NT$600', plan: '卡友滿額加碼', condition: '吉鶴卡主打日本；中油無專屬加碼（聯邦加油降價限全國加油）；國內 1%＋當月國內消費滿 2 萬＋每月登錄 +2%（至 2027/3/31）；新戶綁聯邦帳戶自扣 +0.5%（核卡後 3 個月內上限 NT$300）', effort: 4 },
+      thsr:      { rate: 3.0, basic: 1.0, cap: '滿額加碼月上限 NT$600', plan: '卡友滿額加碼', condition: '高鐵無專屬加碼；國內 1%＋當月國內消費滿 2 萬＋每月 15 日 10:00 起登錄（每月限 2 萬名）+2%（5 週年活動，至 2027/3/31）；⚠️ 網購天天聯邦日只限 momo／蝦皮／酷澎／淘寶，高鐵不適用；超商付款取票、悠遊卡／一卡通自動加值 0%', effort: 4 },
     }
   },
 ];
@@ -378,6 +390,7 @@ window.SCENARIOS = [
   { id: 'momo',      label: 'momo',    emoji: '📦', desc: 'momo 站內結帳', category: 'platform' },
   { id: 'taobao',    label: '淘寶',    emoji: '🐼', desc: '淘寶／天貓跨境', category: 'platform' },
   { id: 'cpc',       label: '中油加油', emoji: '⛽', desc: '中油直營（不含台塑）', category: 'platform' },
+  { id: 'thsr',      label: '高鐵',    emoji: '🚄', desc: '官網／T Express／車站購票', category: 'platform' },
 ];
 
 window.EFFORT_LABEL = {
