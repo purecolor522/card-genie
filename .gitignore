@@ -6,3 +6,7 @@ node_modules/
 .env
 .env.local
 Thumbs.db
+
+# 來源網頁的本機快照（銀行網頁全文，repo 公開所以不上傳）
+sources/snapshots/
+sources/checks/

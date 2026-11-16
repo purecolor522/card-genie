@@ -10,7 +10,7 @@
   <title>刷卡精靈 · 我的信用卡指南</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" type="image/svg+xml" href="icon.svg" />
-  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -19,6 +19,8 @@
 <body>
   <!-- 主畫面：情境選擇 -->
   <main id="view-home" class="view view-active">
+    <!-- 資料過期提醒：卡片過了 validUntil 才顯示 -->
+    <div id="stale-banner" class="stale-banner" role="status" hidden></div>
     <header class="hero">
       <div class="hero-top">
         <div class="brand">
@@ -36,7 +38,7 @@
 
       <p class="hero-eyebrow">INFO · CARD · GENIE</p>
       <h1 class="hero-title">CASH,<br/>CHOICE,<br/><span class="em"><span>CARD.</span></span></h1>
-      <p class="hero-sub">點選情境或平台，立即比較 12 張卡的最佳回饋與切換方案。</p>
+      <p class="hero-sub">點選情境或平台，立即比較 <span data-card-count>12</span> 張卡的最佳回饋與切換方案。</p>
 
       <div class="hero-scroll" aria-hidden="true">
         <div class="hero-scroll-circle">
@@ -75,7 +77,7 @@
     </section>
 
     <footer class="footnote">
-      <p>資料更新：2026 年 5 月</p>
+      <p id="data-freshness">資料查證：2026/11/16</p>
       <p>權益條款常變動，刷卡前請以發卡銀行公告為準</p>
     </footer>
   </main>
@@ -105,7 +107,7 @@
       </button>
       <div class="page-head-text">
         <h2>全部卡片</h2>
-        <p>11 張卡，依銀行排序</p>
+        <p><span data-card-count>12</span> 張卡，依銀行排序</p>
       </div>
     </header>
 

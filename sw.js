@@ -1,4 +1,4 @@
-const CACHE = 'card-genie-v7-cpc';
+const CACHE = 'card-genie-v8';
 const ASSETS = [
   './',
   './index.html',
@@ -7,6 +7,8 @@ const ASSETS = [
   './app.js',
   './manifest.webmanifest',
   './icon.svg',
+  './icon-192.png',
+  './icon-512.png',
 ];
 
 self.addEventListener('install', (e) => {

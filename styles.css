@@ -595,8 +595,11 @@ ul, ol { list-style: none; }
   background: var(--paper);
   color: var(--ink);
   font-weight: 700;
-  white-space: nowrap;
   letter-spacing: 0.5px;
+  /* 上限／方案說明可能很長：放不下時換行，不要撐出卡片 */
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
 }
 .tag-effort {
   background: var(--ink) !important;
@@ -889,6 +892,34 @@ ul, ol { list-style: none; }
   margin-top: 12px;
 }
 .footnote p + p { margin-top: 4px; }
+
+/* ===== 資料過期提醒 ===== */
+.stale-banner {
+  padding: calc(var(--safe-top) + 12px) 22px 12px;
+  background: var(--danger);
+  color: var(--paper);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.stale-banner[hidden] { display: none; }
+.stale-banner strong {
+  display: block;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.stale-banner p { margin-top: 2px; }
+/* 提醒已處理過瀏海安全區，hero 不必再留一次 */
+.stale-banner:not([hidden]) + .hero { padding-top: 18px; }
+.tag.tag-stale,
+.rank-card.best .tag.tag-stale {
+  background: var(--danger);
+  color: var(--paper);
+  border-color: var(--danger);
+}
+.detail-meta-row .v.is-stale {
+  color: var(--danger);
+  font-weight: 700;
+}
 
 /* 卡面背景：保留各信用卡 palette，套灰階濾鏡讓融入版面 */
 .card-face {
