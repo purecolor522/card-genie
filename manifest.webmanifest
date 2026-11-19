@@ -1,7 +1,7 @@
 {
   "name": "刷卡精靈 · 我的信用卡指南",
   "short_name": "刷卡精靈",
-  "description": "一鍵查找：出國、LINE Pay、外送、網購、星巴克、全聯、中油、高鐵等情境，最划算的信用卡",
+  "description": "一鍵查找：出國、LINE Pay、外送、網購、星巴克、全聯、中油、高鐵、Uber 等情境，最划算的信用卡",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

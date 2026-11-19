@@ -63,6 +63,8 @@
 | chb-myle | 彰銀 My 樂卡片頁（6 大 Pay 活動 115/7/1–12/31） | [連結](https://mylove.bankchb.com/) | [2025-10-14](https://web.archive.org/web/20251014/https://mylove.bankchb.com/)（舊版） | 彰銀 My樂現金回饋卡 行動支付刷My樂 |
 | ctbc-nofeedback | 中信不回饋交易項目（2026 年版） | [連結](https://www.ctbcbank.com/twrbo/zh_tw/cc_index/cc_feedback/cc_nofeedback.html) | 無 | 中國信託 不回饋交易項目 |
 | fubon-jcard-ipass | 富邦 J 卡一卡通大眾運輸 2%（高鐵除外） | [連結](https://cardpromote.taipeifubon.com.tw/promotion/Detail?sn=C000146) | [2026-06-10](https://web.archive.org/web/20260610/https://cardpromote.taipeifubon.com.tw/promotion/Detail?sn=C000146)（舊版） | J卡 一卡通 大眾運輸 2% 回饋 |
+| uber-linepay | Uber 台灣部落格：叫車可用 LINE Pay 付款（2025/10/29） | [連結](https://www.uber.com/zh-TW/blog/line-pay-launch-202511-zh/) | 無 | Uber 叫車 LINE Pay 支付行程費用 |
+| money101-taxi | Money101：計程車／Uber 付款方式與信用卡整理（2026/6/10） | [連結](https://www.money101.com.tw/blog/計程車-linetaxi-uber-yoxi-台灣大車隊) | [2026-05-21](https://web.archive.org/web/20260521/https://www.money101.com.tw/blog/計程車-linetaxi-uber-yoxi-台灣大車隊)（早於 6/10 更新） | 計程車 信用卡推薦 Uber 付款方式 |
 
 ## 各卡變更與依據
 
@@ -176,6 +178,22 @@
   - 🟡 中信 uniopen 1：高鐵不是統一集團通路，只有國內一般消費 1%；不回饋項目沒有交通，但有便利商店消費和儲值。〔ctbc-uniopen〕〔ctbc-nofeedback〕
   - 🟡 富邦 J 卡、momo 卡 1：只有一般消費 1%；兩張卡的一卡通大眾運輸 2% 都明文「高鐵除外」。〔fubon-jcard〕〔fubon-momo〕〔fubon-jcard-ipass〕
   - 🟠 momo 卡上半年的高鐵／臺鐵加碼 7% 已在 2026/6/30 結束，只有第三方整理，官網已查不到。
+
+### 新增情境：搭乘 Uber（uber）
+2026-11-19 新增，只算國內叫車；Uber Eats 仍歸「外送平台」。這次新增的兩個來源快照是 11/19 擷取的，跟其他快照放在同一個資料夾。
+- ✅ 付款方式：Uber 官方部落格 2025/10/29 的文章寫明可以在 Uber App 綁 LINE Pay 付車資。文中的 LINE POINTS 活動已在 2025/11/30 結束。〔uber-linepay〕
+- 🟠 Money101 的付款方式表（2026/6/10 更新）列出 Uber 收信用卡、Apple Pay、Google Pay，不收街口、Pi 拍錢包、台灣 Pay、全支付。同一張表把 LINE Pay 標成不收，和 Uber 官方文章矛盾，LINE Pay 以官方為準。〔money101-taxi〕
+- 🟠 沒有找到 2026 年 11、12 月銀行和 Uber 合作的刷卡活動。
+- 各卡 `rate`：
+  - ✅ 玉山 Unicard 4.5：Uber 列在百大「加油交通」，限國內搭乘、新臺幣交易。〔esun-unicard〕
+  - 🟡 彰銀 My 樂 3.5：6 大 Pay 包含 LINE Pay、Google Pay；Uber 收 LINE Pay 有官方文章，收 Google Pay 只有 Money101 的表。LINE Pay 帳單要顯示「連加／連支」；Google Pay 限代碼化卡片交易，在 App 內使用存在 Google Pay 的卡也算。〔chb-myle〕〔uber-linepay〕〔money101-taxi〕
+  - ✅ 台新 Richart、太陽／玫瑰 3.3：「天天刷」的通勤交通明列 Uber，限交易地臺灣、新臺幣；天天刷限實體卡（含線上輸入卡號）、台新 Pay、Apple Pay、Google 錢包、Samsung Pay，LINE Pay 綁定只適用 Chill刷、Pay著刷、假日刷。在國外叫 Uber 屬「玩旅刷」。〔taishin-7plus1〕〔taishin-richart〕
+  - ✅ 玉山 U Bear 3：「常見網路消費清單」交通類明列 Uber，行動支付（含 LINE Pay）也算網路消費。〔esun-ubear〕
+  - ✅ 國泰 CUBE 3：Uber 列在「趣旅行」的指定國內外交通；國內限短程叫車，不含機場接送、長租車、代駕；綁 LINE Pay 等支付工具付款不算指定消費。〔cathay-cube-list〕
+  - 🟡 玉山 Pi 3：沒有 Uber 加碼，走滿額加碼，跟高鐵同樣算法。〔esun-pi〕
+  - ✅ 聯邦吉鶴 3：外送活動明文排除「Uber App 及 Uber Eats App 中的 Uber 服務交易」，叫車只剩 5 週年滿額加碼 +2%。〔ubot-delivery〕〔ubot-jiho-5y〕
+  - 🟠 彰銀 My 購 2：官網沒點名 Uber；在 App 綁卡屬線上刷卡，跟外送、高鐵線上購票的算法一致。〔chb-mygo〕
+  - 🟡 中信 uniopen、富邦 J 卡、momo 卡 1：都沒有叫車加碼，只有一般消費 1%。〔ctbc-uniopen〕〔fubon-jcard〕〔fubon-momo〕
 
 ## 下次更新
 

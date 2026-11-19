@@ -29,7 +29,7 @@ CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 TZ = timezone(timedelta(hours=8))
 SOON_DAYS = 45          # 幾天內到期算「快到期」
 MIN_TEXT = 300          # curl 抓到的文字少於這個長度，視為要靠 JavaScript 顯示，改用 Chrome
-BLOCKED = {'202', '403', '429'}  # curl 拿到這些狀態碼時，多半是防機器人頁面，改用 Chrome 再試
+BLOCKED = {'202', '403', '406', '429'}  # curl 拿到這些狀態碼時，多半是防機器人頁面，改用 Chrome 再試
 # 頁面變動中，含這些字的行比較可能跟回饋條件有關，報告優先列出
 RELEVANT = re.compile(r'\d+(\.\d+)?\s*%|回饋|加碼|上限|登錄|期間|活動|點數|不適用|排除|不回饋|20\d\d/|11\d/')
 
@@ -55,7 +55,7 @@ def fetch(url: str) -> tuple[str, str, str]:
                            capture_output=True, text=True)
         status = r.stdout.strip() or '連線失敗'
         text = to_text(Path(tmp.name).read_bytes().decode('utf-8', errors='ignore'))
-    # 文字太少（要靠 JavaScript 顯示），或被擋下（202／403／429，常見於防機器人頁面）時，改用 Chrome
+    # 文字太少（要靠 JavaScript 顯示），或被擋下（202／403／406／429，常見於防機器人頁面）時，改用 Chrome
     blocked = status in BLOCKED
     if ((status == '200' and len(text) < MIN_TEXT) or blocked) and Path(CHROME).exists():
         profile = tempfile.mkdtemp(prefix='card-genie-chrome-')
